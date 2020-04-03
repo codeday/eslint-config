@@ -21,6 +21,13 @@ module.exports = {
     'react/jsx-props-no-spreading': ['off'],
     'react/jsx-one-expression-per-line': ['off'],
     'react/state-in-constructor': ['off'],
+    "jsdoc/require-jsdoc": [1, {require: {
+      ArrowFunctionExpression: true,
+      FunctionExpression: true,
+      ClassDeclaration: true,
+      ClassExpression: true,
+      MethodDefinition: true,
+    }}],
     'jsdoc/check-examples': ['error', { paddedIndent: 2 }],
     'class-methods-use-this': ['off'],
     'comma-dangle': ['error', {
