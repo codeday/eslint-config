@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: [ 'jsdoc', 'sonarjs', 'no-secrets'],
+  plugins: [ 'jsdoc', 'sonarjs', 'no-secrets', 'node'],
   extends: [ 'airbnb', 'plugin:jsdoc/recommended', 'plugin:sonarjs/recommended'],
   settings: {
     jsdoc: {
