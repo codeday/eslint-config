@@ -10,6 +10,7 @@ module.exports = {
     }
   },
   rules: {
+    'no-unused-vars': ["error", { "varsIgnorePattern": "^_+$", "argsIgnorePattern": "^_+$" }],
     'no-secrets/no-secrets': ['error'],
     'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     'max-len': ['error', 120],
@@ -34,8 +35,6 @@ module.exports = {
     'node/no-extraneous-import': ['error'],
     'node/no-extraneous-require': ['error'],
     'node/no-exports-assign': ['error'],
-    'node/no-missing-import': ['error'],
-    'node/no-missing-require': ['error'],
     'node/no-unpublished-bin': ['error'],
     'node/no-unpublished-import': ['error'],
     'node/no-unpublished-require': ['error'],
