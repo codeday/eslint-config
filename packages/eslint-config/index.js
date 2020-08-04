@@ -1,10 +1,7 @@
 module.exports = {
   plugins: [ 'sonarjs', 'no-secrets', 'node'],
-  extends: [ 'airbnb', 'plugin:jsdoc/recommended', 'plugin:sonarjs/recommended'],
+  extends: [ 'airbnb', 'plugin:sonarjs/recommended'],
   settings: {
-    jsdoc: {
-      ignorePrivate: true,
-    },
     tagNamePreference: {
       'augments': 'extends',
     },
@@ -22,7 +19,8 @@ module.exports = {
   },
 
   rules: {
-    'no-unused-vars': ["error", { "varsIgnorePattern": "^_+$", "argsIgnorePattern": "^_+$" }],
+    'no-unused-vars': ['error', { varsIgnorePattern: '^_+$', argsIgnorePattern: '^_+$' }],
+    'no-empty': ['error', { allowEmptyCatch: true }],
     'no-secrets/no-secrets': ['error'],
     'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     'max-len': ['error', 120],
@@ -44,6 +42,7 @@ module.exports = {
     ],
 
     'require-jsdoc': ['off'],
+    'valid-jsdoc': ['off'],
     'import/prefer-default-export': ['off'],
 
     'node/no-deprecated-api': ['error'],
