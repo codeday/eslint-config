@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: [ 'jsdoc', 'sonarjs', 'no-secrets', 'node'],
+  plugins: [ 'sonarjs', 'no-secrets', 'node'],
   extends: [ 'airbnb', 'plugin:jsdoc/recommended', 'plugin:sonarjs/recommended'],
   settings: {
     jsdoc: {
@@ -7,8 +7,20 @@ module.exports = {
     },
     tagNamePreference: {
       'augments': 'extends',
-    }
+    },
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.js',
+          '.mjs',
+          '.jsx',
+          '.ts',
+          '.tsx',
+        ],
+      },
+    },
   },
+
   rules: {
     'no-unused-vars': ["error", { "varsIgnorePattern": "^_+$", "argsIgnorePattern": "^_+$" }],
     'no-secrets/no-secrets': ['error'],
@@ -27,9 +39,12 @@ module.exports = {
         'objects': 'always-multiline',
         'imports': 'always-multiline',
         'exports': 'always-multiline',
-        'functions': 'never',
+        'functions': 'always-multiline',
       }
     ],
+
+    'require-jsdoc': ['off'],
+    'import/prefer-default-export': ['off'],
 
     'node/no-deprecated-api': ['error'],
     'node/no-extraneous-import': ['error'],
@@ -40,15 +55,23 @@ module.exports = {
     'node/no-unpublished-require': ['error'],
     'node/process-exit-as-throw': ['error'],
     'node/shebang': ['error'],
-
-    'jsdoc/check-examples': ['error', { paddedIndent: 2 }],
-
-    // Fix for broken autofix in jsdoc
-    'jsdoc/require-jsdoc': [0],
-    'require-jsdoc': [1, {require: {
-      ArrowFunctionExpression: true,
-      FunctionExpression: true,
-      MethodDefinition: true,
-    }}],
-  }
+    'node/prefer-promises/fs': ['error'],
+    'node/prefer-promises/dns': ['error'],
+    'node/no-process-env': ['error'],
+    'node/exports-style': [
+      'error',
+      'module.exports',
+    ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        mjs: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
+  },
 };

@@ -1,0 +1,16 @@
+{
+  "name": "@codeday/eslint-typescript-config",
+  "version": "1.3.0",
+  "main": "index.js",
+  "author": "Tyler Menezes <tylermenezes@srnd.org>",
+  "license": "Artistic-2.0",
+  "private": false,
+  "dependencies": {
+    "@codeday/eslint-config": "^1.3.0",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
+}
