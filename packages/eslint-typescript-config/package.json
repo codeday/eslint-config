@@ -2,6 +2,9 @@
   "name": "@codeday/eslint-typescript-config",
   "version": "2.0.1",
   "main": "index.js",
+  "bin" : {
+    "eslint-typescript-init" : "./bin/init.js"
+  },
   "author": "Tyler Menezes <tylermenezes@srnd.org>",
   "license": "Artistic-2.0",
   "private": false,
