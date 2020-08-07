@@ -5,7 +5,7 @@ const fs = require('fs');
 const rootPath = process.cwd();
 
 const eslintrc = `module.exports = {
-  extends: '@codeday/eslint-typescript-config',
+  extends: './node_modules/@codeday/eslint-typescript-config',
 };
 `;
 
