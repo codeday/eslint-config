@@ -16,5 +16,5 @@ build/
 .git/
 `;
 
-fs.writeFileSync(path.join(rootPath, '.eslintrc'), eslintrc);
+fs.writeFileSync(path.join(rootPath, '.eslintrc.js'), eslintrc);
 fs.writeFileSync(path.join(rootPath, '.eslintignore'), eslintignore);
