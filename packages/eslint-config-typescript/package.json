@@ -1,6 +1,6 @@
 {
   "name": "@codeday/eslint-config-typescript",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "main": "index.js",
   "bin": {
     "eslint-typescript-init": "./bin/init.js"
