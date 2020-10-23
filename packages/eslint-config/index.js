@@ -45,6 +45,7 @@ module.exports = {
     'valid-jsdoc': ['off'],
     'import/prefer-default-export': ['off'],
 
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
     'node/no-deprecated-api': ['error'],
     'node/no-extraneous-import': ['error'],
     'node/no-extraneous-require': ['error'],

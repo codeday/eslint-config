@@ -8,4 +8,7 @@ module.exports = {
   plugins: [
     '@typescript-eslint',
   ],
+  rules: {
+    'no-shadow': 'off',
+  },
 };
