@@ -10,5 +10,7 @@ module.exports = {
   ],
   rules: {
     'no-shadow': 'off',
+    'no-useless-constructor': 'off',
+    '@typescript-eslint/no-useless-constructor': 'error',
   },
 };
