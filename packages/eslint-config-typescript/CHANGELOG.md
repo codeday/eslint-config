@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/codeday/eslint-config/compare/v2.1.7...v3.0.0) (2023-03-22)
+
+**Note:** Version bump only for package @codeday/eslint-config-typescript
+
+
+
+
+
 ## [2.1.7](https://github.com/codeday/eslint-config/compare/v2.1.6...v2.1.7) (2020-11-11)
 
 **Note:** Version bump only for package @codeday/eslint-config-typescript
