@@ -1,6 +1,6 @@
 {
   "packages": [
-    "packages/*"
+    "packages/eslint-config*"
   ],
   "version": "2.1.7",
   "command": {
