@@ -45,7 +45,7 @@ module.exports = {
 
   overrides: [
     {
-      files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
+      files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
       parser: require.resolve('@typescript-eslint/parser'),
       parserOptions: {
         sourceType: 'module',
