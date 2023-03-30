@@ -1,1 +1,1 @@
-module.exports = require("@codeday/prettier-config");
+module.exports = require('@codeday/prettier-config');

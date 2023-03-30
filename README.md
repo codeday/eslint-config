@@ -15,7 +15,7 @@ $ yarn add --dev @codeday/eslint-config
 ```jsonc
 {
   // ...
-  "prettier": "@codeday/eslint-config/prettier"
+  "prettier": "@codeday/prettier-config"
 }
 ```
 
