@@ -1,8 +1,8 @@
 {
   "packages": [
-    "packages/*"
+    "packages/eslint-config*"
   ],
-  "version": "2.1.7",
+  "version": "3.0.1",
   "command": {
     "publish": {
       "conventionalCommits": true,

@@ -1,0 +1,9 @@
+{
+  "name": "@codeday/prettier-config",
+  "version": "1.0.0",
+  "description": "CodeDay Prettier config",
+  "main": "index.json",
+  "repository": "git@github.com:codeday/prettier-config.git",
+  "author": "Nikhil Garg <nikhilgarg@codeday.org>",
+  "license": "Artistic-2.0"
+}
